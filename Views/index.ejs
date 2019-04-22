@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/CSS/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <div class='rocker'>
+        <h1>S i n g e r s</h1>
+    </div>
+    <ul>
+    <%for(let i = 0; i <singers.length; i++){%>
+        <%if(singers[i]=== undefined){%>
+        <%continue} %>
+    <li><a href='music/Singers/<%=[i]%>'><%=singers[i].name%></a></li>
+        <%}%>
+    </ul>
+    <form action='SingersNew' method='GET'>
+    <button type='submit'>A D D  N E W</button>
+    </form>
+    <div class='rocker'>
+    <h2>S o n g s</h2>
+    </div>
+    <ul>
+        <%for(let i = 0; i <songs.length; i++){%>
+        <%if(songs[i]=== undefined){%>
+        <%continue;}%>
+    <li><a href='/Songs/<%=[i]%>'><%=songs[i].name%></a></li>
+        <%}%>
+    </ul>
+    <form action='./Songs/new'>
+    <button type='submit'>A D D  N E W</button>
+    </form>
+    </body>
+</html>

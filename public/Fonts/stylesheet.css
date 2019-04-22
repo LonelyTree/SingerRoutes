@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Permanent Marker';
+    src: url('PermanentMarker.woff2') format('woff2'),
+        url('PermanentMarker.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HVD Rowdy';
+    src: url('HVDRowdy.woff2') format('woff2'),
+        url('HVDRowdy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
